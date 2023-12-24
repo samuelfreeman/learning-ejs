@@ -12,9 +12,12 @@
         <li>New years resolution 
 
             <li> Mindset : Open your mind listen to alot of stuff!</li>
-            <li><%=foo %></li>
-            <%= console.log("Wow") %>
+            
+            <% for (let list of bulk){ %>
+          <li> <%= list.list %>   </li>   
+            <% } %>
+            
         </li>
     </p>
 </body>
-</html>
+</html> 

@@ -3,13 +3,16 @@ const app = express();
 const path = require("path");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+const { moveMessagePortToContext } = require("worker_threads");
 
 app.use(bodyParser.json());
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/", async (req, res) => {
-  res.render("index", { foo: "Practice open mindset" });
+  res.render("index", {
+    bulk: [{ list: "Check your diet" }, { list: "Pay attention to detail" }, { list: " Read alot of books" }],
+  });
 });
 
 app.use(cors({ origin: true, credentials: true }));
