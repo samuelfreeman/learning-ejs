@@ -9,7 +9,7 @@ app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
 app.get("/", async (req, res) => {
-  res.render("index");
+  res.render("index", { foo: "Practice open mindset" });
 });
 
 app.use(cors({ origin: true, credentials: true }));

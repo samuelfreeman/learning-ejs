@@ -2,7 +2,7 @@
   "name": "learning-ejs",
   "version": "1.0.0",
   "description": "This repository is where i will be storing all my files on ejs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
